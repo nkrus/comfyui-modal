@@ -1,6 +1,6 @@
 ## ComfyUI + Flux dev + PULid setup for [modal.com](https://modal.com/) environment
 
-This setup includes allows to run free image generation environment in [modal.com](https://modal.com/). Best environment for people who has no GPU available.
+This setup allows to run free image generation environment in [modal.com](https://modal.com/). Best environment for people who has no GPU available.
 
 Modal gives you 30$ for free and you can use it as your ComfyUI experimental environment for any diffusion model.
 
