@@ -82,33 +82,6 @@ image = (
     # Add .run_commands(...) calls for any other custom nodes you want to download
 )
 
-
-
-# # XLABS STAFF
-#  # put down here additional layers to your likings below
-# image = (
-#     image.run_commands( # XLabs ControlNet node 
-#         "comfy node install https://github.com/XLabs-AI/x-flux-comfyui"
-#     )
-#     .run_commands( #download controlnet v3 xlabs ai
-#         "comfy --skip-prompt model download --url https://huggingface.co/XLabs-AI/flux-controlnet-depth-v3/resolve/main/flux-depth-controlnet-v3.safetensors --relative-path models/xlabs/controlnets",
-#         "comfy --skip-prompt model download --url https://huggingface.co/XLabs-AI/flux-controlnet-canny-v3/resolve/main/flux-canny-controlnet-v3.safetensors --relative-path models/xlabs/controlnets",
-#         "comfy --skip-prompt model download --url https://huggingface.co/XLabs-AI/flux-controlnet-hed-v3/resolve/main/flux-hed-controlnet-v3.safetensors --relative-path models/xlabs/controlnets",
-#     )
-#     .run_commands( #install control net requried for above xlabs
-#         "comfy node install https://github.com/Fannovel16/comfyui_controlnet_aux"
-#     )
-#     .run_commands( #xlab loras --optional
-#         "comfy --skip-prompt model download --url https://huggingface.co/XLabs-AI/flux-lora-collection/resolve/main/art_lora_comfy_converted.safetensors --relative-path models/loras",
-#         "comfy --skip-prompt model download --url https://huggingface.co/XLabs-AI/flux-lora-collection/resolve/main/anime_lora_comfy_converted.safetensors --relative-path models/loras",
-#         "comfy --skip-prompt model download --url https://huggingface.co/XLabs-AI/flux-lora-collection/resolve/main/disney_lora_comfy_converted.safetensors --relative-path models/loras",
-#         "comfy --skip-prompt model download --url https://huggingface.co/XLabs-AI/flux-lora-collection/resolve/main/mjv6_lora_comfy_converted.safetensors --relative-path models/loras",
-#         "comfy --skip-prompt model download --url https://huggingface.co/XLabs-AI/flux-lora-collection/resolve/main/realism_lora_comfy_converted.safetensors --relative-path models/loras",
-#         "comfy --skip-prompt model download --url https://huggingface.co/XLabs-AI/flux-lora-collection/resolve/main/scenery_lora_comfy_converted.safetensors --relative-path models/loras"
-#     )
-# )
-
-
 app = modal.App(name="flux1-dev-comfyui", image=image)
 
 @app.function(
