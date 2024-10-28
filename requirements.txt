@@ -1,0 +1,7 @@
+comfy-cli==1.2.7
+facexlib
+insightface
+onnxruntime
+onnxruntime-gpu
+ftfy
+timm
